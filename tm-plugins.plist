@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>tm-plugins</string>
+
+    <key>ProgramArguments</key>
+    <array>
+      <!-- Modify these two lines to reflect your node location and repo location -->
+      <string>/Users/admin/.nvm/versions/node/v22.12.0/bin/node</string>
+      <string>/Users/admin/Projects/plugins-server/node_modules/.bin/tsx</string>
+      <string>/Users/admin/Projects/plugins-server/dist/index.js</string>
+    </array>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/admin/Library/Logs/tm-plugins/err.log</string>
+
+    <key>StandardOutPath</key>
+    <string>/Users/admin/Library/Logs/tm-plugins/out.log</string>
+
+    <key>EnvironmentVariables</key>
+    <dictionary>
+      <key>RENDER_EXTERNAL_URL</key>
+      <string>https://tm-plugins.brainya.cc</string>
+    </dictionary>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/admin/Projects/plugins-server</string>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>KeepAlive</key>
+    <true/>
+
+  </dict>
+</plist>
+
